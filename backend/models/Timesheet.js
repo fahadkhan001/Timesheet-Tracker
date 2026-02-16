@@ -1,34 +1,34 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const timesheetSchema = new mongoose.Schema(
   {
     user: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
-      required: true
+      required: true,
     },
     date: {
       type: Date,
-      required: true
+      required: true,
     },
-    projectName: {
+    taskName: {
       type: String,
-      required: true
+      required: true,
     },
-    hoursWorked: {
+    hours: {
       type: Number,
-      required: true
+      required: true,
     },
     description: {
-      type: String
+      type: String,
     },
     status: {
       type: String,
       enum: ["pending", "approved", "rejected"],
-      default: "pending"
-    }
+      default: "pending",
+    },
   },
   { timestamps: true }
 );
 
-module.exports = mongoose.model("Timesheet", timesheetSchema);
+export default mongoose.model("Timesheet", timesheetSchema);

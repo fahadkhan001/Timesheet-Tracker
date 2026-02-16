@@ -5,7 +5,7 @@ export const updateUser = async (req, res) => {
   try {
     const { id } = req.params;
 
-    if (req.user.id !== id && req.user.role !== "admin") {
+    if (req.user._id !== id && req.user.role !== "admin") {
       return res.status(403).json({ message: "You can only update your own account" });
     }
 
@@ -39,7 +39,7 @@ export const deleteUser = async (req, res) => {
   try {
     const { id } = req.params;
 
-    if (req.user.id !== id && req.user.role !== "admin") {
+    if (req.user._id !== id && req.user.role !== "admin") {
       return res.status(403).json({ message: "You can only delete your own account" });
     }
 

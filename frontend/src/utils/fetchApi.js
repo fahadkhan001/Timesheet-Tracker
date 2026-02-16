@@ -1,10 +1,10 @@
-const BASE_URL = "http://localhost:3000"; 
+const BASE_URL = "http://localhost:3000";
 
 export async function fetchApi(
   endpoint,
   data = {},
   method = "GET",
-  token = null
+  token = null,
 ) {
   const url = `${BASE_URL}/${endpoint}`;
 
@@ -19,7 +19,7 @@ export async function fetchApi(
     options.headers["Authorization"] = `Bearer ${token}`;
   }
 
-  if (method !== "GET") {
+  if (method !== "GET" && data && Object.keys(data).length > 0) {
     options.body = JSON.stringify(data);
   }
 

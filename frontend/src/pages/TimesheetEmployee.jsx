@@ -102,7 +102,7 @@ const theme = createTheme({
   },
 });
 
-const TimesheetEmp = () => {
+const TimesheetEmployee = () => {
   const navigate = useNavigate();
   const [timesheets, setTimesheets] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -569,4 +569,4 @@ const TimesheetEmp = () => {
   );
 };
 
-export default TimesheetEmp;
+export default TimesheetEmployee;

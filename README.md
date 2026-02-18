@@ -45,3 +45,4 @@ Start Frontend (from frontend folder):
 For ADMIN login use credential:
 admin@gmail.com
 password:Abcd12345*
+Once an employee given a admin role it can be reversed.

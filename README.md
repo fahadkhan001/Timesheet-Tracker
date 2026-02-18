@@ -40,3 +40,8 @@ Start Backend (from root folder):
 
 Start Frontend (from frontend folder):  
     * npm run dev
+
+
+For ADMIN login use credential:
+admin@gmail.com
+password:Abcd12345*

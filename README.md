@@ -13,8 +13,8 @@ Before setting up the project, ensure you have:
 Create a .env file inside the backend/ folder.
 
 1.PORT=5000
-2.MONGO_URI="mongodb+srv://fahad:fahad1530@timesheet-tracker.kfp50a6.mongodb.net/?appName=timesheet-tracker
-3.JWT_SECRET=supersecretkey
+2.MONGO_URI
+3.JWT_SECRET
 
 put all these in .env file
 
